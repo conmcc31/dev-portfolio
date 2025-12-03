@@ -1,5 +1,7 @@
 export default function ProjectPage() {
     return(
-        <div>Project page</div>
+        <div className=" w-screen flex  justify-center ">
+            <h1 className="">Projects</h1>
+        </div>
     )
 }

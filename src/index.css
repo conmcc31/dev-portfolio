@@ -2,7 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 px-4 py-2
+    rounded-lg font-medium
+    bg-slate-800 text-slate-100
+    hover:bg-slate-700
+    transition-colors
+    shadow-md shadow-slate-900/30;
+  }
 
+  .btn-primary {
+    @apply bg-sky-600 hover:bg-sky-700 text-white;
+  }
+
+  .btn-outline {
+    @apply border border-slate-600 bg-transparent
+    text-slate-300 hover:bg-slate-800 hover:text-white;
+  }
+
+  .btn-small {
+    @apply text-sm px-3 py-1.5;
+  }
+
+  .btn-large {
+    @apply text-lg px-6 py-3;
+  }
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
